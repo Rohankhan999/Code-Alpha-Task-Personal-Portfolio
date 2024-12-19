@@ -233,6 +233,7 @@ Projects {
 #calculator:hover {
     filter: none;
     border-radius: 20px;
+    transition: 2s;
 }
 
 .contact-heading {
