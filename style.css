@@ -1,0 +1,257 @@
+body {
+    background: #780206;
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    background: linear-gradient(to right, #061161, #780206);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    color: whitesmoke;
+    margin-top: 35px;
+    font-size: 30px;
+    font-family: "Sour Gummy", serif;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: whitesmoke;
+    font-family: "Sour Gummy", serif;
+    font-size: 23px;
+}
+
+ul li:hover {
+    transition: 1s;
+    color: #fc3232f4;
+
+}
+
+#name {
+    margin-left: 10px;
+    font-size: 44px;
+    color: rgb(232, 24, 107);
+}
+
+#heading {
+    margin-left: 30px;
+    font-size: 44px;
+}
+
+.left {
+    margin-top: 150px;
+    width: 675px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.right {
+    margin-right: 50px;
+}
+
+#main-image {
+    filter: drop-shadow(10px 10px 7px rgb(88, 87, 88));
+    animation: floatImage 4s ease-in-out infinite;
+    margin-top: 50px;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+button {
+    background-color: #fe0077;
+    border: none;
+    width: auto;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: "Sour Gummy", serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 600;
+    box-shadow: rgba(27, 88, 221, 0.16) 0px 22px 70px 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: crimson;
+    transition: 1s;
+    color: black;
+    box-shadow: none;
+    box-shadow: rgba(246, 4, 4, 0.845) 0px 22px 70px 4px;
+}
+
+about {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+#about-image {
+    width: 30rem;
+    animation: floatImage 4s ease-in-out infinite;
+    filter: drop-shadow(10px 10px 7px rgb(88, 87, 88));
+}
+
+.about-left {
+    text-align: center;
+    width: 600px;
+}
+
+p {
+    font-family: "Sour Gummy", serif;
+    color: whitesmoke;
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+.skills-container {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-heading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card {
+    width: 350px;
+    padding: 10px;
+    height: auto;
+    background: linear-gradient(115deg, #662d8c, #ed1e79);
+    box-shadow: rgba(3, 23, 243, 0.493) 0px 22px 70px 4px;
+}
+
+.card:hover {
+    box-shadow: none;
+
+
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 20px;
+    font-family: "Sour Gummy", serif;
+}
+
+#skils-description {
+    font-family: "Sour Gummy", serif;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 5px;
+    padding: 4px;
+}
+
+#card-button {
+    background-color: #fe0077;
+    border: none;
+    width: 160px;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: "Sour Gummy", serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: 600;
+    box-shadow: rgba(27, 88, 221, 0.16) 0px 22px 70px 4px;
+    cursor: pointer;
+    margin-left: 85px;
+    margin-top: 5px;
+}
+
+#card-button:hover {
+    background-color: crimson;
+    transition: 1s;
+    color: black;
+    box-shadow: none;
+    box-shadow: rgba(246, 4, 4, 0.845) 0px 22px 70px 4px;
+}
+
+.Projects-heading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+Projects {
+    padding-top: 400px
+}
+
+.project-main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#calculator {
+    filter: grayscale(100%);
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: rgba(3, 23, 243, 0.493) 0px 22px 70px 4px;
+
+}
+
+#calculator:hover {
+    filter: none;
+    border-radius: 20px;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+Contact {
+    width: 100%;
+}
+.name{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+}
+input{
+    background-color:rgb(194, 175, 175);
+    width:250px;
+    height: 30px;
+    border: none;
+
+}
