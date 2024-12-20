@@ -241,18 +241,61 @@ Projects {
     margin-top: 100px;
 }
 
-Contact {
+.contact-main {
     width: 100%;
-}
-.name{
     display: flex;
-    gap: 30px;
+   margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+input {
+    background-color: rgb(194, 175, 175);
+    width: 250px;
+    height: 40px;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    /* margin-left: 20px; */
+    
+}
+fieldset{
+    margin-left: 0px;
+    border: 8px solid rgba(202, 7, 189, 0.721);
+    width:auto;
+    height:auto;
+    border-radius: 20px; 
+    padding: 20px;
+    
+}
+::placeholder{
+    text-align: center;
+}
+.info{
+    display: flex;
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.info2{
+    display: flex;
+     gap: 50px;
+}
+textarea{
+    width:550px;
+    height:200px;
+    margin-top: 30px;
+    background-color: rgb(194, 175, 175);
+    padding: 20px;
+    margin-left: 20px;
+}
+.send-Messege{
+    margin-left: 180px;
+}
+hr{
+    border: 3px white solid;
     margin-top: 100px;
 }
-input{
-    background-color:rgb(194, 175, 175);
-    width:250px;
-    height: 30px;
-    border: none;
-
+.footer{
+    text-align: center;
 }

@@ -19,16 +19,16 @@
   </head>
   <body>
     <nav>
-      <h1 class="animate__animated animate__fadeInDown">Portfolio</h1>
+      <h1 class="animate__animated animate__fadeInDown">Rohan</h1>
       <ul class="animate__animated animate__fadeInDown">
-        <a href="about"></a><li>Home</li>
-        <li>About me</li>
-        <li>My Skills</li>
-        <li>Projects</li>
-        <li>Contact me</li>
+        <li onclick="Home()">Home</li>
+        <li onclick="aboutme()">About me</li>
+        <li onclick="Skills()">My Skills</li>
+        <li onclick="project()">Projects</li>
+        <li onclick="Contact()">Contact me</li>
       </ul>
     </nav>
-    <section class="animate__animated animate__fadeInUp">
+    <section class="animate__animated animate__fadeInUp" id="Home">
       <div class="left">
         <h1 id="heading">
           Welcome!, Here Myself is Rohan, I'm <span id="name"></span>
@@ -40,7 +40,7 @@
         <img id="main-image" src="image/main-image.png" alt="main-image" />
       </div>
     </section>
-    <about>
+    <about id="about">
       <div class="about-left" >
         <h1 class="animate__animated animate__fadeInLeft">About me</h1>
         <p class="animate__animated animate__fadeInLeft">
@@ -60,7 +60,7 @@
         />
       </div>
     </about>
-     <skills>
+     <skills id="Skills">
       <h1 class="skills-heading">My Skills</h1>
       <div class="skills-container">
         <div class="card"><img src="https://cdn-icons-png.freepik.com/256/4403/4403383.png?ga=GA1.1.1507680453.1719128961&semt=ais_hybrid" alt="responsive desgin" width="50%" style="margin-top: 30px; margin-left: 85px;">
@@ -80,7 +80,7 @@
          <button id="card-button">Read More</button></div>
       </div>
      </skills>
-     <Projects>
+     <Projects id="project">
       <h1 class="Projects-heading">Lastest Projects</h1>
       <div class="project-main">
         <img id="calculator" src="image/Capture.PNG" alt="calculator" width="400px" >
@@ -92,10 +92,27 @@
 
       </div>
      </Projects>
-     <Contact>
+     <Contact id="Contact">
       <h1 class="contact-heading">Contact me</h1>
-      <div class="name"><input type="text"><input type="text"></div>
+      <div class="contact-main">
+        <fieldset>
+          <div class="info">
+          <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Father Name" required>
+      </div>
+      <div class="info">
+        <input type="number" placeholder="Phone no" required >
+        <input type="text" placeholder="Email" required>
+      </div>
+      <textarea name="Description" placeholder="Description"></textarea>
+      <div class="send-Messege">
+      <button>Send Messege</button>
+    </div>
+      </fieldset>
+      </div>
      </Contact>
+     <hr>
+     <h1 class="footer">Rohan's portfolio Revised Reverse ©</h1>
     <script src="app.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
